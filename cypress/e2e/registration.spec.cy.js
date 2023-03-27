@@ -22,7 +22,7 @@ describe("Register test", () => {
         cy.url().should("contain", "/register");
     });
 
-    it("register test", () => {
+    it("Register test", () => {
         cy.get(locators.register.firstNameInput).type(userData.firstName);
         cy.get(locators.register.lastNameInput).type(userData.lastName);
         cy.get(locators.commonFormElements.emailInput).type(userData.email);
@@ -32,7 +32,7 @@ describe("Register test", () => {
         cy.get(locators.commonFormElements.submitButton).click();
     });
 
-    it("register without email test", () => {
+    it("Register without email test", () => {
         cy.get(locators.register.firstNameInput).type(userData.firstName);
         cy.get(locators.register.lastNameInput).type(userData.lastName);
         cy.get(locators.commonFormElements.passwordInput).type(userData.password);
@@ -41,7 +41,7 @@ describe("Register test", () => {
         cy.get(locators.commonFormElements.submitButton).click();
     });
 
-    it("register without password test", () => {
+    it("Register without password test", () => {
         cy.get(locators.register.firstNameInput).type(userData.firstName);
         cy.get(locators.register.lastNameInput).type(userData.lastName);
         cy.get(locators.commonFormElements.emailInput).type(userData.email);
